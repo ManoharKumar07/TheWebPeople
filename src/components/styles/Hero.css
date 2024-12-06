@@ -1,0 +1,105 @@
+/* Custom styles for large screens (larger than 992px) */
+.hero-section {
+  display: flex; /* Use flexbox to arrange items horizontally */
+  justify-content: space-between; /* Space out the content evenly */
+  align-items: center; /* Center items vertically */
+  padding: 20px;
+  height: 600px;
+}
+
+.hero-text {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.hero-title {
+  font-weight: bold;
+  font-size: 48px; /* Larger font size for desktop screens */
+  line-height: 1.2;
+  color: black;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.hero-title span {
+  display: block; /* Each part of the title should be on a new line */
+}
+
+.hero-subtext {
+  font-weight: bold;
+  font-size: 13px;
+  color: black;
+  line-height: 1.6;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+/* Button Styling */
+.hero-btn {
+  background-color: #dfb61090 !important;
+  color: black !important;
+  font-weight: bold !important;
+  font-size: 13px !important;
+  text-transform: uppercase !important;
+  border: none !important;
+  padding: 12px 24px !important;
+  margin-top: 20px;
+  cursor: pointer !important;
+}
+
+/* Right Column: Image Section */
+.hero-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.image-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image fills the container without distortion */
+}
+
+/* Responsive Styles for smaller screens */
+@media (max-width: 992px) {
+  .hero-section {
+    flex-direction: column; /* Stack items vertically on small screens */
+    height: auto; /* Adjust height to fit content */
+    text-align: center; /* Center-align text */
+  }
+
+  .hero-text {
+    padding-left: 20px; /* Less padding on smaller screens */
+    padding-right: 20px;
+    margin-bottom: 20px;
+  }
+
+  .hero-title {
+    font-size: 32px; /* Smaller font size on mobile */
+  }
+
+  .hero-btn {
+    font-size: 14px;
+    padding: 8px 16px; /* Adjust padding for better touch interaction */
+  }
+
+  .hero-image {
+    margin-top: 20px;
+  }
+
+  .image-placeholder img {
+    width: 100%;
+    max-width: 400px; /* Limit the image size on smaller screens */
+    max-height: 400px;
+  }
+}
