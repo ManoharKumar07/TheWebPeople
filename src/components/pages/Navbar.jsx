@@ -1,10 +1,9 @@
 import React, { useState } from "react";
+import "../styles/Navbar.css"; // External CSS for desktop styling
 
 const Navbar = () => {
-  // State to control the visibility of the mobile navigation menu
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
 
-  // Toggles the visibility of the mobile menu when the button is clicked
   const toggleMobileNav = () => {
     setIsMobileNavOpen(!isMobileNavOpen);
   };
@@ -12,9 +11,9 @@ const Navbar = () => {
   return (
     <div className="container px-5">
       {/* Main navigation bar container */}
-      <div className="navbar d-flex justify-content-between align-items-center">
+      <div className="navbar">
         {/* Logo section */}
-        <div className="logo h-5">
+        <div className="logo">
           <img
             src="/Image/Main-Logo.png" // Path to the logo image
             alt="Logo" // Alternate text displayed if the image fails to load
@@ -25,61 +24,60 @@ const Navbar = () => {
 
         {/* Desktop navigation links */}
         <ul className="nav d-none d-md-flex">
-          {/* Links are arranged horizontally and hidden on smaller screens */}
+          {/* Desktop navigation (Bootstrap hides this on small screens) */}
           <li className="nav-item">
-            <a className="nav-link fw-medium text-black" href="#work">
+            <a className="nav-link" href="#work">
               WORK
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link fw-medium text-black" href="#about">
+            <a className="nav-link" href="#about">
               ABOUT
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link fw-medium text-black" href="#blog">
+            <a className="nav-link" href="#blog">
               BLOG
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link fw-medium text-black" href="#contact">
+            <a className="nav-link" href="#contact">
               CONTACT
             </a>
           </li>
         </ul>
 
-        {/* Hamburger button for mobile screens */}
+        {/* Hamburger button for mobile screens (Bootstrap visible on small screens) */}
         <button
-          className="navbar-toggler d-md-none" // Visible only on small screens, hidden on medium and larger screens
+          className="navbar-toggler d-md-none"
           type="button"
-          onClick={toggleMobileNav} // Toggles the mobile menu visibility
+          onClick={toggleMobileNav}
         >
-          <span className="navbar-toggler-icon"></span>{" "}
-          {/* Displays the hamburger icon */}
+          <span className="navbar-toggler-icon"></span>
         </button>
 
         {/* Mobile navigation menu */}
         {isMobileNavOpen && (
           <div className="mobile-nav d-md-none">
-            {/* Links are stacked vertically for mobile screens */}
+            {/* Mobile navigation links (Bootstrap visible only on small screens) */}
             <ul className="nav flex-column">
               <li className="nav-item">
-                <a className="nav-link fw-medium text-black" href="#work">
+                <a className="nav-link" href="#work">
                   WORK
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link fw-medium text-black" href="#about">
+                <a className="nav-link" href="#about">
                   ABOUT
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link fw-medium text-black" href="#blog">
+                <a className="nav-link" href="#blog">
                   BLOG
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link fw-medium text-black" href="#contact">
+                <a className="nav-link" href="#contact">
                   CONTACT
                 </a>
               </li>
