@@ -1,0 +1,67 @@
+/* General Navbar Styling */
+.navbar {
+  display: flex; /* Flexbox layout for the navbar */
+  justify-content: space-between; /* Space between the logo and the nav links */
+  align-items: center; /* Vertically center the items */
+  height: 80px; /* Set fixed height for the navbar */
+}
+
+/* Logo */
+.logo img {
+  height: 80px; /* Fixed height for the logo */
+  width: auto; /* Maintain the aspect ratio of the logo */
+}
+
+/* Desktop Navigation */
+.nav {
+  list-style: none; /* Remove bullet points */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  display: flex; /* Arrange nav items horizontally */
+  gap: 20px; /* Space between each nav item */
+}
+
+.nav a {
+  text-decoration: none; /* Remove underline from links */
+  color: black; /* Set text color to black */
+  font-size: 16px; /* Font size for the links */
+  font-weight: 500; /* Medium font weight */
+}
+
+/* Mobile Navigation */
+.mobile-nav {
+  position: absolute; /* Position the mobile menu over other content */
+  top: 80px; /* Position the mobile menu below the navbar */
+  left: 0; /* Align to the left */
+  right: 0; /* Align to the right */
+  background-color: white; /* Set background color to white */
+  padding: 20px; /* Add padding inside the mobile menu */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for better visibility */
+}
+
+.mobile-nav .nav {
+  flex-direction: column; /* Stack nav items vertically for mobile */
+  gap: 10px; /* Space between the items */
+}
+
+.mobile-nav a {
+  text-decoration: none; /* Remove underline from links */
+  color: black; /* Set text color to black */
+  font-size: 16px; /* Font size for the links */
+  font-weight: 500; /* Medium font weight */
+}
+
+/* Hamburger Button */
+.navbar-toggler {
+  background: none; /* No background for the button */
+  border: none; /* No border */
+  font-size: 24px; /* Larger font size for the hamburger icon */
+  cursor: pointer; /* Pointer cursor on hover to indicate it's clickable */
+}
+
+/* Responsive Visibility */
+@media (min-width: 768px) {
+  .mobile-nav {
+    display: none; /* Hide the mobile menu on screens larger than 768px */
+  }
+}
