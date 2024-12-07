@@ -1,0 +1,36 @@
+.client-partners-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* ~20px spacing between logos */
+  width: 100%; /* Full width of the viewport */
+  height: 150px; /* Height of the section */
+  background-color: white;
+  margin-top: 50px;
+  flex-wrap: wrap; /* Allow wrapping for medium and smaller screens */
+}
+
+.client-partners-row div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.client-logo {
+  width: 200px; /* ~200px width */
+  height: 100px; /* ~100px height */
+  object-fit: contain; /* Ensure logos fit within the specified dimensions */
+}
+
+/* Media query for medium screens (e.g., tablets, width <= 768px) */
+@media (max-width: 768px) {
+  .client-partners-row {
+    height: auto; /* Adjust height dynamically */
+    gap: 15px; /* Reduce gap for smaller screens */
+  }
+
+  .client-logo {
+    width: 150px; /* Reduce logo size */
+    height: 75px; /* Reduce logo height */
+  }
+}
