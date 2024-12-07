@@ -1,0 +1,116 @@
+.about-us {
+  width: 100%;
+  height: auto; /* Adjusted to auto height to fit the content */
+  padding-top: 20px;
+}
+
+.about-title {
+  font-weight: bold;
+  font-size: 50px; /* Increased font size */
+  color: black; /* Updated to the new color */
+  text-transform: uppercase;
+  text-align: left;
+  margin-block: 30px;
+}
+
+.about-subtext {
+  font-weight: bold; /* Restored bold font weight */
+  font-size: 14px; /* Small font size */
+  color: black; /* Updated to the new color */
+  text-align: left;
+  margin-bottom: 40px; /* Increased margin for better spacing */
+}
+
+.about-columns {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  gap: 20px; /* Added gap between columns */
+  margin-top: 30px; /* Space between text and columns */
+}
+
+.about-column {
+  flex: 1; /* Ensures all columns are equally wide */
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.image-placeholderAbout {
+  width: 100%;
+  height: 300px;
+  background-color: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1; /* Keeps image inside the column */
+}
+
+.image-placeholderAbout img {
+  width: 100%; /* Makes image responsive */
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
+.about-text {
+  line-height: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Ensures vertical centering */
+  text-align: left; /* Aligns text to the left */
+  width: 100%;
+  height: 350px; /* Ensures full height to properly center content vertically */
+}
+
+.text-title {
+  font-weight: bold; /* Bold title */
+  font-size: 18px;
+  color: black; /* Updated to the new color */
+  margin-bottom: 10px;
+}
+
+.text-description {
+  font-weight: bold; /* Made the text bold */
+  font-size: 14px;
+  color: black; /* Color remains black */
+  margin-block: 10px;
+}
+
+.read-more {
+  font-weight: 500;
+  font-size: 14px;
+  color: black; /* Color remains black */
+  text-decoration: none; /* Removed the underline */
+  cursor: pointer;
+}
+
+.caption-box {
+  width: 100%;
+  height: 60px;
+  background-color: #fff000; /* Updated to the new color */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 2; /* Ensures caption is above the image */
+  padding: 40px;
+}
+
+.caption-name {
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: black; /* Color of text remains black */
+  margin: 0;
+}
+
+.caption-role {
+  font-weight: 500;
+  font-size: 10px;
+  color: white; /* Color of text remains black */
+  margin: 0;
+}

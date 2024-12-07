@@ -9,6 +9,7 @@
 
 /* Title Styling */
 .work-title {
+  font-size: 50px;
   font-weight: bold;
   font-size: 3rem;
   text-transform: uppercase;
@@ -41,7 +42,7 @@
 
 /* Artwork Section */
 .artwork {
-  background-color: yellow; /* Highlight this section */
+  background-color: #fff000; /* Highlight this section */
   padding: 60px;
   text-align: center;
   height: 35%; /* Allocate part of the column height */
@@ -89,7 +90,7 @@
 
 /* Show More Button */
 .show-more-btn {
-  background-color: yellow;
+  background-color: #fff000;
   color: black;
   font-weight: bold;
   text-transform: uppercase;

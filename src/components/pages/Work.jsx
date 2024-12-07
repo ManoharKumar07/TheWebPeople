@@ -13,7 +13,7 @@ const Work = () => {
         <div className="work-grid">
           {/* Grid layout containing all work items */}
 
-          <div className="work-item first">
+          <div className="work-item first ">
             {/* First grid item */}
             <div className="artwork image-placeholder">
               {/* Artwork section inside the first grid item */}
@@ -22,7 +22,7 @@ const Work = () => {
               <p>BRANDING</p>
               {/* Subtext for the artwork */}
             </div>
-            <div className="image-placeholder" id="image6">
+            <div className="image-placeholder " id="image6">
               <img src="./Image/Image-4.jpg" alt="Artwork" />
               {/* Image for the first grid item */}
             </div>
