@@ -6,6 +6,7 @@ import AboutUs from "./components/pages/AboutUs";
 import ContactUs from "./components/pages/ContactUs";
 import Footer from "./components/pages/Footer";
 import ClientPartner from "./components/pages/ClientPartner";
+import SocialIcon from "./components/pages/SocialIcon";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <ClientPartner />
         <AboutUs />
         <ContactUs />
+        <SocialIcon />
         <Footer />
       </div>
     </>

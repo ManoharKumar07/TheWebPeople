@@ -1,5 +1,6 @@
 /* General styling for the Contact Us section */
 .contact-us {
+  margin-bottom: 5px;
   width: 100%;
   padding: 50px 0;
   display: flex;
@@ -117,12 +118,21 @@
 /* Responsive design for smaller screens */
 @media (max-width: 768px) {
   .contact-columns-container {
+    background-color: white;
     flex-direction: column; /* Stack columns vertically on smaller screens */
   }
-
+  .image-placeholderContact {
+    background-color: white;
+  }
+  .form-heading {
+    margin-top: -50px;
+  }
   .contact-form,
   .contact-image {
+    background-color: white;
     width: 100%; /* Full width on smaller screens */
-    margin-top: 20px;
+  }
+  .contact-image {
+    margin-top: -20px;
   }
 }
