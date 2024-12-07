@@ -1,3 +1,4 @@
+````markdown
 # Website Design Task - Built with Vite React
 
 This project is built using React.js and custom CSS for styling, as part of an interview task for The Web People.
@@ -16,10 +17,11 @@ This project is built using React.js and custom CSS for styling, as part of an i
 
 ### 1. Clone the repository:
 
-````bash
+```bash
 git clone git@github.com:ManoharKumar07/TheWebPeople.git
 cd TheWebPeople
-
+```
+````
 
 ### 2. Install dependencies:
 
@@ -42,4 +44,7 @@ For the code repository, clone it using this link:
 ```bash
 git clone git@github.com:ManoharKumar07/TheWebPeople.git
 ```
-````
+
+```
+
+```
