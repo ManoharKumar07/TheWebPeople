@@ -1,105 +1,96 @@
 /* Custom styles for large screens (larger than 992px) */
+
+/* Outer container padding for the hero section */
+.hero-container {
+  padding: 0 20px;
+}
+
+/* Flexbox layout for hero section */
 .hero-section {
   display: flex; /* Use flexbox to arrange items horizontally */
   justify-content: space-between; /* Space out the content evenly */
-  align-items: center; /* Center items vertically */
+  align-items: stretch; /* Make sure both columns have the same height */
+  height: 500px; /* Set the height of the section */
+  margin-top: 100px; /* Add space at the top */
+}
+
+/* Both text and image columns take equal width */
+.hero-text,
+.hero-image {
+  flex: 1; /* Ensure both columns take equal width */
+  display: flex;
   padding: 20px;
-  height: 600px;
+  gap: 20px; /* Add space between the items */
 }
 
+/* Text column: Aligns and centers text vertically */
 .hero-text {
-  padding-left: 40px;
-  padding-right: 40px;
+  flex-direction: column; /* Stack the text vertically */
+  justify-content: center; /* Center the content vertically within the column */
+  align-items: flex-start; /* Align text to the left */
+  padding-left: 0;
+  padding-right: 0;
 }
 
+/* Title styling */
 .hero-title {
   font-weight: bold;
-  font-size: 48px; /* Larger font size for desktop screens */
-  line-height: 1.2;
+  font-size: 65px; /* Larger font size for desktop screens */
+  line-height: 1.2; /* Adjust line height for readability */
   color: black;
-  text-align: left;
-  margin-bottom: 20px;
+  text-align: left; /* Align text to the left */
+  margin-bottom: 15px; /* Space between title and subtext */
 }
 
+/* Make each part of the title appear on a new line */
 .hero-title span {
-  display: block; /* Each part of the title should be on a new line */
+  display: block;
 }
 
+/* Subtext styling */
 .hero-subtext {
   font-weight: bold;
   font-size: 13px;
   color: black;
-  line-height: 1.6;
+  line-height: 1.6; /* Improve readability with line height */
   text-align: left;
-  margin-bottom: 20px;
+  margin-bottom: 15px; /* Space between subtext and button */
 }
 
 /* Button Styling */
 .hero-btn {
-  background-color: #dfb61090 !important;
-  color: black !important;
+  background-color: #fff000 !important; /* Bright yellow background */
+  color: black !important; /* Text color black */
   font-weight: bold !important;
   font-size: 13px !important;
-  text-transform: uppercase !important;
-  border: none !important;
-  padding: 12px 24px !important;
-  margin-top: 20px;
-  cursor: pointer !important;
+  text-transform: uppercase !important; /* Uppercase text */
+  border: none !important; /* No border around the button */
+  padding: 12px 28px !important; /* Padding for the button */
+  margin-top: 10px; /* Space between button and content */
+  cursor: pointer !important; /* Pointer cursor on hover */
 }
 
 /* Right Column: Image Section */
-.hero-image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
+.hero-image img {
+  width: 100%; /* Ensure the image stays within its container */
+  height: 100%; /* Maintain aspect ratio */
+  object-fit: cover; /* Fill the container without distortion */
+  padding: 0; /* Remove any extra padding */
+  box-sizing: border-box; /* Include padding/borders in the total width calculation */
 }
 
+/* Placeholder for image */
 .image-placeholder {
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: center; /* Center the image horizontally */
+  align-items: center; /* Center the image vertically */
 }
 
+/* Image inside the placeholder: ensuring it covers the area */
 .image-placeholder img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Ensure the image fills the container without distortion */
-}
-
-/* Responsive Styles for smaller screens */
-@media (max-width: 992px) {
-  .hero-section {
-    flex-direction: column; /* Stack items vertically on small screens */
-    height: auto; /* Adjust height to fit content */
-    text-align: center; /* Center-align text */
-  }
-
-  .hero-text {
-    padding-left: 20px; /* Less padding on smaller screens */
-    padding-right: 20px;
-    margin-bottom: 20px;
-  }
-
-  .hero-title {
-    font-size: 32px; /* Smaller font size on mobile */
-  }
-
-  .hero-btn {
-    font-size: 14px;
-    padding: 8px 16px; /* Adjust padding for better touch interaction */
-  }
-
-  .hero-image {
-    margin-top: 20px;
-  }
-
-  .image-placeholder img {
-    width: 100%;
-    max-width: 400px; /* Limit the image size on smaller screens */
-    max-height: 400px;
-  }
+  width: 100%; /* Image takes up full width of container */
+  height: 100%; /* Image takes up full height of container */
+  object-fit: cover; /* Ensures the image covers the container without stretching */
 }
