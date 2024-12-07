@@ -1,0 +1,128 @@
+/* General styling for the Contact Us section */
+.contact-us {
+  width: 100%;
+  padding: 50px 0;
+  display: flex;
+  margin-top: 50px;
+  flex-direction: column; /* Ensure content stacks vertically */
+}
+
+/* Styling for the title of the Contact Us section */
+.contact-title {
+  font-weight: bold;
+  font-size: 40px;
+  color: black;
+  text-transform: uppercase;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+/* Subtext below the title */
+.contact-subtext {
+  font-weight: bold;
+  font-size: 14px;
+  color: black;
+  text-align: left;
+  margin-bottom: 110px;
+  width: 100%;
+  max-width: 800px; /* Limit width to improve readability */
+}
+
+/* Container for the form and image columns */
+.contact-columns-container {
+  height: 600px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  font-weight: bold;
+  margin-top: 0; /* Remove top margin */
+}
+
+/* Styling for the contact form */
+.contact-form {
+  width: 48%;
+  margin-top: -45px;
+}
+
+/* Heading for the contact form */
+.form-heading {
+  font-weight: bold;
+  font-size: 20px;
+  color: black;
+  margin-bottom: 20px;
+}
+
+/* Input fields and textarea styling */
+.contact-input,
+.contact-textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  background-color: white;
+  font-weight: bold;
+}
+
+/* Placeholder text styling */
+.contact-input::placeholder,
+.contact-textarea::placeholder {
+  color: black;
+}
+
+/* Styling for the textarea */
+.contact-textarea {
+  height: 150px;
+}
+
+/* Styling for the submit button */
+.contact-button {
+  width: 200px;
+  padding: 10px 20px;
+  background-color: yellow;
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* Right column containing the image */
+.contact-image {
+  width: 48%;
+  max-width: 100%;
+  height: 90%;
+}
+
+/* Styling for the image placeholder container */
+.image-placeholderContact {
+  width: 100%;
+  height: 300px;
+  background-color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+/* Styling for the image inside the placeholder */
+.contact-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Ensures image covers the container while maintaining aspect ratio */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .contact-columns-container {
+    flex-direction: column; /* Stack columns vertically on smaller screens */
+  }
+
+  .contact-form,
+  .contact-image {
+    width: 100%; /* Full width on smaller screens */
+    margin-top: 20px;
+  }
+}
