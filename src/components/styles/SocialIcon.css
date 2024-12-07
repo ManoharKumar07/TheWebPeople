@@ -2,15 +2,15 @@
   margin-top: -150px;
   background-color: white;
   display: flex;
-  justify-content: center; /* Center icons */
+  justify-content: center;
   align-items: center;
   gap: 25px; /* Fixed gap between icons */
 }
 
 .Social-logo {
-  width: 50px; /* Set icon width */
-  height: 50px; /* Set icon height */
-  object-fit: contain; /* Maintain aspect ratio of images */
+  width: 50px; /* Setting icon width */
+  height: 50px; /* Setting icon height */
+  object-fit: contain;
 }
 
 /* Responsive Design */
@@ -28,6 +28,6 @@
   }
 
   .container {
-    height: auto; /* Adjust height for smaller screens */
+    height: auto; /* Adjusting height for smaller screens */
   }
 }

@@ -4,7 +4,7 @@ import "../styles/AboutUs.css";
 const AboutUs = () => {
   return (
     <div className="container px-5">
-      <section className="about-us">
+      <section className="about-us" id="about">
         {/* Section for About Us content */}
 
         <h1 className="about-title">ABOUT US</h1>
@@ -66,7 +66,6 @@ const AboutUs = () => {
             <a href="#" className="read-more">
               Read More
             </a>
-            {/* Link to read more about the team */}
           </div>
         </div>
       </section>

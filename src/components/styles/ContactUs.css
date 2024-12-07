@@ -1,4 +1,4 @@
-/* General styling for the Contact Us section */
+/* the container with subtext and row with teo columns  */
 .contact-us {
   margin-bottom: 5px;
   width: 100%;
@@ -117,6 +117,9 @@
 
 /* Responsive design for smaller screens */
 @media (max-width: 768px) {
+  .contact-title {
+    text-align: center;
+  }
   .contact-columns-container {
     background-color: white;
     flex-direction: column; /* Stack columns vertically on smaller screens */
@@ -130,7 +133,7 @@
   .contact-form,
   .contact-image {
     background-color: white;
-    width: 100%; /* Full width on smaller screens */
+    width: 100%;
   }
   .contact-image {
     margin-top: 20px;

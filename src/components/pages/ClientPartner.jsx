@@ -4,6 +4,7 @@ import "../styles/ClientPartner.css";
 const ClientPartner = () => {
   return (
     <div className="container px-5">
+      {/* Displaying the images in row using flexbox */}
       <div className="client-partners-row">
         <div>
           <img

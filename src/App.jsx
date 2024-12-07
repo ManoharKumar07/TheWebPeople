@@ -11,6 +11,8 @@ import SocialIcon from "./components/pages/SocialIcon";
 function App() {
   return (
     <>
+      {/* The entry point of the react project . */}
+      {/* here we are adding all the components so that it will be shown in the website */}
       <div>
         <Navbar />
         <Hero />

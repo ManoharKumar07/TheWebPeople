@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import "../styles/Navbar.css"; // External CSS for desktop styling
 
 const Navbar = () => {
+  // Here we using useState hook to change design of navbar based on the screen size
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
 
+  // This function is called when screen size is small
   const toggleMobileNav = () => {
     setIsMobileNavOpen(!isMobileNavOpen);
   };
@@ -15,10 +17,10 @@ const Navbar = () => {
         {/* Logo section */}
         <div className="logo">
           <img
-            src="/Image/Main-Logo.png" // Path to the logo image
-            alt="Logo" // Alternate text displayed if the image fails to load
+            src="/Image/Main-Logo.png"
+            alt="Logo"
             className="img-fluid" // Ensures the image scales within its container
-            style={{ height: "80px", width: "auto" }} // Fixes the height to 80px and maintains aspect ratio
+            style={{ height: "80px", width: "auto" }}
           />
         </div>
 
@@ -47,7 +49,7 @@ const Navbar = () => {
           </li>
         </ul>
 
-        {/* Hamburger button for mobile screens (Bootstrap visible on small screens) */}
+        {/* Hamburger button for mobile screens ( visible on small screens) */}
         <button
           className="navbar-toggler d-md-none"
           type="button"
@@ -59,7 +61,7 @@ const Navbar = () => {
         {/* Mobile navigation menu */}
         {isMobileNavOpen && (
           <div className="mobile-nav d-md-none">
-            {/* Mobile navigation links (Bootstrap visible only on small screens) */}
+            {/* Mobile navigation links ( visible only on small screens) */}
             <ul className="nav flex-column">
               <li className="nav-item">
                 <a className="nav-link" href="#work">

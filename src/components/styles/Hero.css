@@ -1,34 +1,34 @@
-/* Custom styles for large screens (larger than 992px) */
-
-/* Outer container padding for the hero section */
+/* General styles */
 .hero-container {
   padding: 0 20px;
 }
 
 /* Flexbox layout for hero section */
 .hero-section {
-  display: flex; /* Use flexbox to arrange items horizontally */
-  justify-content: space-between; /* Space out the content evenly */
-  align-items: stretch; /* Make sure both columns have the same height */
-  height: 500px; /* Set the height of the section */
-  margin-top: 100px; /* Add space at the top */
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  height: 500px;
+  margin-top: 100px;
   padding-left: 18px;
+  flex-wrap: wrap; /* Allow columns to stack on smaller screens */
 }
 
 /* Both text and image columns take equal width */
 .hero-text,
 .hero-image {
-  flex: 1; /* Ensure both columns take equal width */
+  flex: 1;
   display: flex;
   padding: 20px;
-  gap: 20px; /* Add space between the items */
+  gap: 20px;
+  justify-content: center;
 }
 
 /* Text column: Aligns and centers text vertically */
 .hero-text {
-  flex-direction: column; /* Stack the text vertically */
-  justify-content: center; /* Center the content vertically within the column */
-  align-items: flex-start; /* Align text to the left */
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
   padding-left: 0;
   padding-right: 0;
 }
@@ -36,14 +36,13 @@
 /* Title styling */
 .hero-title {
   font-weight: bold;
-  font-size: 65px; /* Larger font size for desktop screens */
-  line-height: 1.2; /* Adjust line height for readability */
+  font-size: 65px;
+  line-height: 1.2;
   color: black;
-  text-align: left; /* Align text to the left */
-  margin-bottom: 15px; /* Space between title and subtext */
+  text-align: left;
+  margin-bottom: 15px;
 }
 
-/* Make each part of the title appear on a new line */
 .hero-title span {
   display: block;
 }
@@ -53,31 +52,31 @@
   font-weight: bold;
   font-size: 13px;
   color: black;
-  line-height: 1.6; /* Improve readability with line height */
+  line-height: 1.6;
   text-align: left;
-  margin-bottom: 15px; /* Space between subtext and button */
+  margin-bottom: 15px;
 }
 
 /* Button Styling */
 .hero-btn {
-  background-color: #fff000 !important; /* Bright yellow background */
-  color: black !important; /* Text color black */
-  font-weight: bold !important;
-  font-size: 13px !important;
-  text-transform: uppercase !important; /* Uppercase text */
-  border: none !important; /* No border around the button */
-  padding: 12px 28px !important; /* Padding for the button */
-  margin-top: 10px; /* Space between button and content */
-  cursor: pointer !important; /* Pointer cursor on hover */
+  background-color: #fff000;
+  color: black;
+  font-weight: bold;
+  font-size: 13px;
+  text-transform: uppercase;
+  border: none;
+  padding: 12px 28px;
+  margin-top: 10px;
+  cursor: pointer;
 }
 
 /* Right Column: Image Section */
 .hero-image img {
-  width: 100%; /* Ensure the image stays within its container */
-  height: 100%; /* Maintain aspect ratio */
-  object-fit: cover; /* Fill the container without distortion */
-  padding: 0; /* Remove any extra padding */
-  box-sizing: border-box; /* Include padding/borders in the total width calculation */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* Placeholder for image */
@@ -85,13 +84,44 @@
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: center; /* Center the image horizontally */
-  align-items: center; /* Center the image vertically */
+  justify-content: center;
+  align-items: center;
 }
 
-/* Image inside the placeholder: ensuring it covers the area */
 .image-placeholder img {
-  width: 100%; /* Image takes up full width of container */
-  height: 100%; /* Image takes up full height of container */
-  object-fit: cover; /* Ensures the image covers the container without stretching */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Responsive Styles for smaller screens */
+@media (max-width: 768px) {
+  /* On small screens, stack the hero-text and hero-image columns */
+  .hero-section {
+    flex-direction: column;
+    height: auto; /* Remove fixed height on small screens */
+  }
+
+  .hero-text,
+  .hero-image {
+    width: 100%; /* Make both columns take full width */
+    padding: 15px;
+    gap: 15px;
+  }
+
+  /* Adjust title font size for smaller screens */
+  .hero-title {
+    font-size: 45px; /* Smaller font size on mobile */
+  }
+
+  /* Adjust subtext font size */
+  .hero-subtext {
+    font-size: 12px;
+  }
+
+  /* Button: Reduceing padding and font size */
+  .hero-btn {
+    padding: 10px 24px;
+    font-size: 12px;
+  }
 }

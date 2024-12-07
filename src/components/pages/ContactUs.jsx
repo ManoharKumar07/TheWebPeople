@@ -5,7 +5,7 @@ const ContactUs = () => {
   return (
     <div className="container px-5">
       {/* Main container with padding for layout */}
-      <section className="contact-us">
+      <section className="contact-us" id="contact">
         {/* Title of the Contact Us section */}
         <h1 className="contact-title">CONTACT US</h1>
 
@@ -48,7 +48,7 @@ const ContactUs = () => {
               className="contact-textarea"
             ></textarea>
 
-            {/* Submit button for sending the message */}
+            {/* Submit button  */}
             <button className="contact-button">Send MESSAGE</button>
           </div>
 

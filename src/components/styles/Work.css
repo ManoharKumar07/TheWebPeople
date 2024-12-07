@@ -2,8 +2,6 @@
 .work-showcase-section {
   margin-top: 120px; /* Add spacing above the section */
   padding: 20px 0; /* Vertical padding for spacing */
-  position: relative; /* Prevent overlap with other elements */
-  z-index: 1; /* Ensure proper stacking */
   background-color: white; /* Set a clean background */
 }
 
@@ -11,17 +9,16 @@
 .work-title {
   font-size: 50px;
   font-weight: bold;
-  font-size: 3rem;
   text-transform: uppercase;
   text-align: left;
   margin-bottom: 40px; /* Add spacing below the title */
 }
 
-/* Grid Layout */
-.work-grid {
+/* Flexbox Layout */
+.work-flex {
   display: flex; /* Arrange items in a row */
   flex-wrap: wrap; /* Allow items to wrap to the next row */
-  gap: 20px; /* Add spacing between grid items */
+  gap: 20px; /* Add spacing between flex items */
   justify-content: space-between;
   height: 700px; /* Maintain a consistent height */
 }
@@ -42,7 +39,7 @@
 
 /* Artwork Section */
 .artwork {
-  background-color: #fff000; /* Highlight this section */
+  background-color: #fff000;
   padding: 60px;
   text-align: center;
   height: 35%; /* Allocate part of the column height */
@@ -64,7 +61,7 @@
 /* Placeholder Styles */
 .image-placeholder {
   height: 100%; /* Ensure images fit their containers */
-  object-fit: cover; /* Maintain aspect ratio */
+  object-fit: cover; /* Maintains aspect ratio */
 }
 
 /* Specific Image Heights */
@@ -105,19 +102,20 @@
 
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
-  .work-grid {
+  .work-flex {
     height: auto; /* Adjust height dynamically for small screens */
     flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center-align grid items */
+    align-items: center; /* Center-aligning flex items */
     gap: 30px;
   }
 
   .work-item {
-    width: 80%; /* Reduce item width for better fit */
+    width: 80%; /* Reduceing item width for better fit */
   }
 
   .work-title {
-    font-size: 2.5rem; /* Adjust title size for smaller screens */
+    font-size: 2.5rem;
+    text-align: center;
   }
 
   .show-more-btn {

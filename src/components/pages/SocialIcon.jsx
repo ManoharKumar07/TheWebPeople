@@ -3,6 +3,7 @@ import "../styles/SocialIcon.css";
 const SocialIcon = () => {
   return (
     <div className="container px-5">
+      {/* Here we are placing all the social icons */}
       <div className="Social-row">
         <div>
           <img
