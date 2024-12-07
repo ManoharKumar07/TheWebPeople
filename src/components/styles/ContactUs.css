@@ -133,6 +133,6 @@
     width: 100%; /* Full width on smaller screens */
   }
   .contact-image {
-    margin-top: -20px;
+    margin-top: 20px;
   }
 }

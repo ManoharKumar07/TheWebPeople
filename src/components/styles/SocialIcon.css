@@ -16,7 +16,7 @@
 /* Responsive Design */
 @media (max-width: 768px) {
   .Social-row {
-    margin-top: -70px;
+    margin-top: 50px;
     flex-direction: row;
     justify-content: center; /* Center icons when stacked */
     gap: 20px; /* Maintain gap between stacked icons */
