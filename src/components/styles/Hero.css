@@ -12,6 +12,7 @@
   align-items: stretch; /* Make sure both columns have the same height */
   height: 500px; /* Set the height of the section */
   margin-top: 100px; /* Add space at the top */
+  padding-left: 18px;
 }
 
 /* Both text and image columns take equal width */

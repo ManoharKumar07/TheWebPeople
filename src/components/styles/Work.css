@@ -1,0 +1,110 @@
+.work-showcase-section {
+  margin-top: 50px;
+  padding: 0;
+  margin-inline: 0;
+}
+
+.work-title {
+  font-weight: bold;
+  font-size: 3rem;
+  color: black;
+  text-transform: uppercase;
+  text-align: start;
+  margin-bottom: 40px;
+}
+
+/* Grid Layout */
+.work-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  height: 700px;
+}
+
+.work-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.first {
+  width: 30%;
+  height: 100%;
+}
+
+.second {
+  width: 30%;
+  height: 100%;
+}
+
+.third {
+  width: 30%;
+  height: 100%;
+}
+
+/* Individual sections inside the grid */
+.artwork {
+  background-color: yellow;
+  padding: 60px;
+  padding-block: 60px;
+  text-align: center;
+  height: 35%;
+  display: flex;
+  flex-direction: column;
+}
+
+.artwork h3 {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: black;
+  font-size: 1.5rem;
+}
+
+.artwork p {
+  font-weight: normal;
+  text-transform: uppercase;
+  color: black;
+  font-size: 1rem;
+}
+
+/* Updated image container styles (no padding) */
+.image-placeholder {
+  height: 100%;
+  object-fit: cover;
+}
+#image2 {
+  height: 65%;
+}
+
+#image5 {
+  height: 35%;
+}
+
+#image3 {
+  height: 35%;
+}
+
+#image4 {
+  height: 65%;
+}
+
+#image6 {
+  height: 65%;
+}
+
+/* Button Style */
+.show-more-btn {
+  background-color: yellow;
+  color: black;
+  font-weight: bold;
+  font-size: 1rem;
+  text-transform: uppercase;
+  padding: 10px 30px;
+  border: none;
+  cursor: pointer;
+  margin-top: 70px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
