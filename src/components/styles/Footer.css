@@ -1,0 +1,57 @@
+/* General Footer Styling */
+.footer {
+  background-color: black;
+  color: white;
+  padding: 20px 40px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo and Text Styling */
+.logoandtext {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.footer-logo {
+  max-width: 50px;
+  height: auto;
+}
+
+.logoandtext p {
+  font-size: 14px;
+  margin: 0;
+}
+
+/* Back to Top Link */
+.back-to-top {
+  font-size: 14px;
+  color: white;
+  text-decoration: none;
+}
+
+.back-to-top:hover {
+  color: gray;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .back-to-top {
+    align-self: flex-end;
+  }
+}
