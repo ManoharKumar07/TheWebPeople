@@ -1,55 +1,50 @@
+/* Work Showcase Section */
 .work-showcase-section {
-  margin-top: 50px;
-  padding: 0;
-  margin-inline: 0;
+  margin-top: 100px; /* Add spacing above the section */
+  padding: 20px 0; /* Vertical padding for spacing */
+  position: relative; /* Prevent overlap with other elements */
+  z-index: 1; /* Ensure proper stacking */
+  background-color: white; /* Set a clean background */
 }
 
+/* Title Styling */
 .work-title {
   font-weight: bold;
   font-size: 3rem;
-  color: black;
   text-transform: uppercase;
-  text-align: start;
-  margin-bottom: 40px;
+  text-align: left;
+  margin-bottom: 40px; /* Add spacing below the title */
 }
 
 /* Grid Layout */
 .work-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+  display: flex; /* Arrange items in a row */
+  flex-wrap: wrap; /* Allow items to wrap to the next row */
+  gap: 20px; /* Add spacing between grid items */
   justify-content: space-between;
-  height: 700px;
+  height: 700px; /* Maintain a consistent height */
 }
 
+/* Work Items */
 .work-item {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.first {
-  width: 30%;
-  height: 100%;
-}
-
-.second {
-  width: 30%;
-  height: 100%;
-}
-
+.first,
+.second,
 .third {
-  width: 30%;
+  width: 30%; /* Columns take equal width */
   height: 100%;
 }
 
-/* Individual sections inside the grid */
+/* Artwork Section */
 .artwork {
-  background-color: yellow;
+  background-color: yellow; /* Highlight this section */
   padding: 60px;
-  padding-block: 60px;
   text-align: center;
-  height: 35%;
+  height: 35%; /* Allocate part of the column height */
   display: flex;
   flex-direction: column;
 }
@@ -57,22 +52,21 @@
 .artwork h3 {
   font-weight: bold;
   text-transform: uppercase;
-  color: black;
   font-size: 1.5rem;
 }
 
 .artwork p {
-  font-weight: normal;
-  text-transform: uppercase;
-  color: black;
   font-size: 1rem;
+  text-transform: uppercase;
 }
 
-/* Updated image container styles (no padding) */
+/* Placeholder Styles */
 .image-placeholder {
-  height: 100%;
-  object-fit: cover;
+  height: 100%; /* Ensure images fit their containers */
+  object-fit: cover; /* Maintain aspect ratio */
 }
+
+/* Specific Image Heights */
 #image2 {
   height: 65%;
 }
@@ -93,12 +87,11 @@
   height: 65%;
 }
 
-/* Button Style */
+/* Show More Button */
 .show-more-btn {
   background-color: yellow;
   color: black;
   font-weight: bold;
-  font-size: 1rem;
   text-transform: uppercase;
   padding: 10px 30px;
   border: none;
@@ -106,5 +99,28 @@
   margin-top: 70px;
   display: block;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: auto; /* Center-align button */
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .work-grid {
+    height: auto; /* Adjust height dynamically for small screens */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center-align grid items */
+    gap: 30px;
+  }
+
+  .work-item {
+    width: 80%; /* Reduce item width for better fit */
+  }
+
+  .work-title {
+    font-size: 2.5rem; /* Adjust title size for smaller screens */
+  }
+
+  .show-more-btn {
+    font-size: 0.9rem;
+    margin-top: 50px;
+  }
 }
