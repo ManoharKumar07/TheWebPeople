@@ -25,7 +25,7 @@ cd TheWebPeople
 
 ```bash
 npm install
-````
+```
 
 ### 3. Run the development server:
 
@@ -42,3 +42,4 @@ For the code repository, clone it using this link:
 ```bash
 git clone git@github.com:ManoharKumar07/TheWebPeople.git
 ```
+````
